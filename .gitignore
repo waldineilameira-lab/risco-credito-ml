@@ -1,0 +1,28 @@
+# ============================================================
+# .gitignore — arquivos que NÃO devem ir para o GitHub
+# ============================================================
+
+# Ambiente virtual (cada máquina recria o seu com requirements.txt)
+.venv/
+venv/
+env/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+
+# Checkpoints automáticos do Jupyter
+.ipynb_checkpoints/
+
+# Configurações locais de editor e sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Variáveis de ambiente / segredos
+.env
+
+# OBS: a pasta data/raw/ NÃO está ignorada de propósito.
+# O CSV é pequeno (~2 MB) e precisa estar no repositório
+# para que o avaliador consiga executar o notebook do início ao fim.
