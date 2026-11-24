@@ -1,0 +1,21 @@
+# ============================================================
+# Dependências do projeto: Pipeline Preditivo de Risco de Crédito
+# Instalação: pip install -r requirements.txt
+# Após instalar e testar, congele as versões exatas com:
+#   pip freeze > requirements-lock.txt
+# ============================================================
+
+# --- Manipulação de dados ---
+pandas>=2.2          # DataFrames: leitura do CSV, limpeza, agregações
+numpy>=1.26          # Operações vetoriais e numéricas
+
+# --- Visualização ---
+matplotlib>=3.8      # Base gráfica (histogramas, boxplots, matrizes)
+seaborn>=0.13        # Gráficos estatísticos (heatmap de correlação, countplot)
+
+# --- Machine Learning ---
+scikit-learn>=1.4    # Split, StandardScaler, KNN, Árvore de Decisão, métricas
+imbalanced-learn>=0.12  # SMOTE / RandomUnderSampler (balanceamento só no treino)
+
+# --- Ambiente de notebook no VS Code ---
+ipykernel>=6.29      # Permite o VS Code usar o .venv como kernel do Jupyter
